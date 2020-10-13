@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+  int No=0,Temp=0,cnt=0;
+  printf("\n\n Enter a Number=");
+  scanf("%d",&No);
+
+  Temp=No;
+  if(Temp<0)
+   {
+     Temp= -1*Temp;
+   }
+
+   do
+     {
+       Temp=Temp/10;
+        cnt++;
+      }while(Temp>0);
+    
+   printf("\n\n The Number of Digit in %d=%d",No,cnt);
+    getch();
+    return 0;
+}
