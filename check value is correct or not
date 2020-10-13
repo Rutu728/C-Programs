@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+   int No = 58;
+    printf("\n\n\t\a Welcome To your programming journy\n\n============\n");
+    printf("\n value=%d\t corrected",No);
+    printf("\nThanks \t keep learning\n\n----------\n");
+    getch();
+    return 0;
+}
