@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+ int No=0,Sum=0,i=0;
+    printf("\n Enter 10 Integer Number to calculate their sum=>\n");
+    for(i=1;  i<=10   ;i++)
+    {
+     printf("\n Enter Number %d",i);
+     scanf("%d",&No);
+     
+    Sum=Sum+No;
+    }
+   printf("\n Sum of given 10 Numbers in %d is=%d",Sum);
+    getch();
+    return 0;
+}  
+ 
+ 
+    
