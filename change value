@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{
+int No=0;
+float per=0.0;
+
+   printf("\n value of No=%d",No);
+printf("\n value of per=%0.2f",per);
+
+No=23;
+ per=95.26849;
+printf("\n\n changed value:\n\n");
+
+printf("\n value of No=%d",No);
+printf("\n value of per=0.2f",per);
+
+getch();
+return 0;
+}
