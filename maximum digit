@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+  int No=0,Temp=0,Dig=0,Max=0;
+    printf("\n Enter The Number=");
+    scanf("%d",&No);
+    
+    Temp=No;
+    if(Temp<0)
+    {
+     Temp= -1*Temp;
+    }
+    while(Temp>0)
+    {
+     Dig=Temp%10;
+    if(Dig>Max)
+     {
+      Max=Dig;
+     }
+    printf("\n Temp=%5d,Dig=%d,Max=%d",Temp,Dig,Max);
+    if(Max==9)
+     { 
+      break;
+     }
+    Temp=Temp/10;
+   }
+    printf("\n\n The Maximum Digit in %d is=%d",No,Max);
+    getch();
+    return 0;
+}
