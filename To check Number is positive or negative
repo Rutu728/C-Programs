@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+  int No = 0;
+  printf("\n Enter a Number to check whether it is Positive or Negative:");
+  scanf("%d",&No);
+
+  if(No==0)
+    {
+      printf("\n Number is Neutral...");
+    }
+    
+   else if(No>0)
+    {
+      printf("\n %d is Positive",No);
+    }
+    
+   else 
+    {
+      printf("\n %d is Negative",No);
+    }
+    
+    printf("\n Thanks!!!");
+    getch();
+    
+    return 0;
+}
