@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+  int No=0,Temp=0,Dig=0,Min=9;
+    printf("\n Enter The Number=");
+    scanf("%d",&No);
+    
+    Temp=No;
+    if(Temp<0)
+    {
+     Temp= -1*Temp;
+    }
+    while(Temp>0)
+    {
+     Dig=Temp%10;
+    if(Dig<Min)
+     {
+      Min=Dig;
+     }
+    printf("\n Temp=%5d,Dig=%d,Min=%d",Temp,Dig,Min);
+    if(Min==0)
+     { 
+      break;
+     }
+    Temp=Temp/10;
+   }
+    printf("\n\n The Minimum Digit in %d is=%d",No,Min);
+    getch();
+    return 0;
+}
