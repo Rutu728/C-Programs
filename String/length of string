@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+  int Len = 0;
+  char Str[20] ={};
+  printf("\n Enter String:");
+  gets(Str);
+  Len = Strlenx(Str);
+  printf("\n length of given string =%d",Len);
+  getch();
+  return 0;
+}
+
+  int Strlenx(char *Src)
+   
+   {
+     int Cnt = 0;
+     while(Src[Cnt]!='\0')
+     {
+       Cnt++;
+     }
+   
+      
+   
+    return Cnt;
+ }
