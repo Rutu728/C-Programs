@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+ 
+ int main()
+{
+ 
+   int Day=0;
+   printf("\n Enter a Day Number Between 1-7=");
+   scanf("%d",&Day);
+
+   switch(Day)
+
+   {
+     case 1:
+         printf("\n Today is sunday!!!");
+         break;
+        
+     case 2:
+         printf("\n Today is Monday!!!");
+         break;
+         
+     case 3:
+         printf("\n Today is Tuesday!!!");
+         break;
+        
+     case 4:
+         printf("\n Today is Wednesday!!!");
+         break;
+        
+     case 5:
+         printf("\n Today is Thursday!!!");
+         break;
+        
+     case 6:
+         printf("\n Today is Friday!!!");
+         break;
+        
+      case 7:
+         printf("\n Today is Saturday!!!");
+         break;
+   
+      default:
+         printf("\n Invalide Day Number...");
+         break;
+    }
+
+     printf("\n\n Thanks & Good Bye!!!");
+    
+    getch();
+    return 0;
+}
