@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+   int Val = 0;
+
+   printf("\n Enter a value to gets it's equivalent ASCII character:");
+   scanf("%d",&Val);
+
+  printf("\n ASCII for given value is = %c",Val);
+
+   getch();
+   return 0;
+}
