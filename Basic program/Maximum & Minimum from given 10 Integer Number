@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+ int No=0,Min=0,Max=0,i=0;
+    printf("\n Enter 10 Integer Number to find Minimum & Maximum from it=>\n");
+    for(i=1;  i<=10   ;i++)
+    {
+     printf("\n Enter Number %d",i);
+     scanf("%d",&No);
+     
+    if((No<Min)||(i==1))
+    {
+      Min=No;
+    }
+    if((No>Max)||(i==1))
+    {
+      Max=No;
+    }
+  }
+   printf("\n Minimum from given 10 Numbers in %d is=%d",Min);
+   printf("\n Maximum from given 10 Numbers in %d is=%d",Max);
+    getch();
+    return 0;
+}  
+ 
+ 
+    
