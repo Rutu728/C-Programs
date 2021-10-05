@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+
+  int No=0,fact=0;
+  
+  printf("\n Enter a Number to find it's factorial:");
+
+  scanf("%d,&No");
+
+  if(No<0)
+
+   {
+      printf("\n Invalide Nunber\n");
+   }
+
+  fact=1;
+  while(No>0)
+
+   {
+     fact = fact * No;
+     No--;
+   }
+
+   printf("\n factorial of given no is=%d",fact);
+      
+   printf("\n Thanks!!!");
+
+   getch();
+   return 0;
+}
+    
