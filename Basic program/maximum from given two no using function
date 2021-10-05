@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+ int Find_Maximum(int,int);
+ 
+ int main()
+ {
+   int a,b,Res;
+   printf("\n Enter 2 Number:");
+   scanf("%d%d",&a,&b);
+
+  Res=Find_Maximum(a,b);
+  printf("\n Maximum from given No is %d",Res);
+  getch();
+  return 0;
+}
+
+  int Find_Maximum(int N,int M)
+   {
+     if(N>M)
+      {
+        return N;
+      }
+      else
+       return M;
+   }
+   
