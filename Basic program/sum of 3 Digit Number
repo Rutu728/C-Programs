@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+
+{
+  int No=0,Temp=0,sum=0,cnt=0;
+  printf("\n\n Enter 3 Digit Number=");
+  scanf("%d",&No);
+
+  Temp=No;
+  cnt=0;
+  if(Temp<0)
+  {
+    Temp= -1*Temp;
+  }
+  
+  while(Temp>0)
+   { 
+     Temp=Temp/10;
+     cnt++;
+     if(cnt>3)
+      { 
+        break;
+      }
+   }
+    if(cnt==3)
+      { 
+        Temp=No;
+        while(Temp>0)
+        {
+          sum=sum+(Temp%10);
+          printf("\n Digit=%d.sum=%d",(Temp%10),sum);
+          Temp=Temp/10;
+        }
+    
+         printf("\n\n The sum of Digit in %d is = %d",No,sum);
+       }
+    
+       else 
+     { 
+       printf("\n Invalide Number");
+     }
+     
+     getch();
+     return 0;
+}
